@@ -1,5 +1,6 @@
 using AutoFixture;
 using AutoFixture.AutoMoq;
+using BLL;
 using NUnit.Framework;
 
 
@@ -16,10 +17,11 @@ namespace Tests
         }
 
         [Test]
-        public void Test1()
+        public void GetExcelDTO_ShouldReturnExcelDto()
         {
-            Assert.Pass();
-            var newString = _fixture.Create<string>();
+            var excelLoaderService = _fixture.Create<ExcelLoaderService>();
+            var excelDto = excelLoaderService.GetExcelDtoFromFile();
+            
         }
     }
 }
