@@ -2,7 +2,8 @@
 
 namespace BLL
 {
-    public class Class1
+    public class ExcelLoader : IExcelLoader
     {
+
     }
 }

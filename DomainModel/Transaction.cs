@@ -4,10 +4,10 @@ namespace DomainModel
 {
     public class Transaction
     {
-        public TransactionId TransactionId { get; set; }
-        public string ProductId { get; set; }
+        public TransactionId TransactionId { get; }
+        public string ProductId { get; }
         public DateTime TransactionDate { get; }
-        public decimal Amount { get; set; }
+        public decimal Amount { get; }
 
         public Transaction(
             TransactionId transactionId,
